@@ -7,21 +7,26 @@
 	<meta name="description" content="This page contains information about DNA Barcoding. It is used in the class BSCI 467.">
 	<meta name="author" content="Jenna Kraemer">
 	<style>
-        
+body {background-color: rgb(232, 229, 219);}
 h1 {
   color: darkolivegreen;
   font-family: Georgia;
   font-size: 300%;
   text-align: center;
 }
+h2 {
+    font-size:40px;
+    text-align: center;
+}
 p {
   color: darkolivegreen;
   font-family: verdana;
-  font-size: 160%;
+  font-size: 120%;
 }
 
 li {
   float: left;
+  margin-bottom: 10px
 }
 
 li a {
@@ -31,25 +36,28 @@ li a {
   font-family: verdana;
   padding: 14px 16px;
   text-decoration: none;
-  border-right: 1px solid #bbb;
+  border-right: 3px solid #bbb;
 }
 
 li a:hover {
   background-color: #111;}
 
+ol {
+    float: left;
+    margin-bottom: 10px
+}
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;}
-
 .ul1 {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    font-size: 14px;
 }
-
 .li2 {
     font-family: verdana;
     font-size: 120%;
@@ -60,7 +68,7 @@ li a:hover {
 </header>
 
 <body>
-	<h1>DNA Barcoding</h1>
+	<h1>DNA Barcoding Module</h1>
         <nav>
             <ul class="ul1"> 
                 <li><a href="#What is DNA Barcoding?" class="nav-link">
@@ -71,20 +79,17 @@ li a:hover {
                     DNA Extraction</a></li>
                 <li><a href="#PCR" class="nav-link">
                     PCR</a></li>
+                <li><a href="#Gel Electrophoresis" class="nav-link">
+                    Gel Electrophoresis</a></li>
                 <li><a href="#PCR Purification" class="nav-link">
                     PCR Purification</a></li>
                 <li><a href="#ASequencing" class="nav-link">
                     Sequencing</a></li>
                 <li><a href="#Sequencing Analysis" class="nav-link">
                     Sequencing Analysis</a></li>
-                <li style="float:right"><a class="active" href="#FAQ" class="nav-link">
-                    FAQ</a></li>
             </ul>
         </nav>
         <br><br>
-	<p> DNA Barcoding is the the identification of a species by the characteristic sequence of a standard short section of DNA in its genome.
-	</p>
-
 	<img src="DNA_barcoding1.png" alt="This is a test image" height="200" width="600" class="center">
 
 <div class="main-body">
@@ -94,40 +99,107 @@ li a:hover {
         <main id="main-doc">
             <section class="main-section" id="What is DNA Barcoding?">
             	<br>
-                <header style="font-size:50px;">
+                  <h2>
                     What is DNA Barcoding?
-                </header>
+                </h2>
                 <p>
                     DNA Barcoding is the the identification of a species by the characteristic sequence of a standard short section of DNA in its genome.
                 </p>
+            </section>
             <section class="main-section" id="Collection">
                 <br>
-                <header style="font-size:50px;">
+                   <h2>
                     Collection
-                </header>
+                </h2>
                 <p>
                     A fresh sample must be collected for barcoding to work correctly. Insects must be collected and stored in 100% ethanol immediately after. Samples should be stored in the freezer to further protect from degradation. 
                 </p>
+            </section>
             <section class="main-section" id="DNA Extraction">
                 <br>
-                <header style="font-size:50px;">
+                   <h2>
                     DNA Extraction
-                </header>
+                </h2>
                 <p>
-                    Purpose: isolate DNA molecules from cells or tissues for various scientific or research purposes. Reagents/supplies in order and their purpose:
+                    <b>Purpose</b>: isolate DNA molecules from cells or tissues for various scientific or research purposes. <br><br> For this module, we use the <a href = https://www.qiagen.com/us/products/discovery-and-translational-research/dna-rna-purification/dna-purification/genomic-dna/dneasy-blood-and-tissue-kit>Qiagen DNeasy Blood and Tissue Kit</a>  Reagents/supplies in order and their purpose:
                     <ul class = "li2">
-                    <li>ATL Buffer: Lyse (break open) cells and tissues to release the DNA contained within them. It does this by disrupting the cell membranes and nuclear membranes, effectively releasing the cellular and nuclear contents, including DNA, into the solution. </li>
-                    <li>Proteinase K: Proteinase K is highly effective at digesting a wide range of proteins, including nucleases and other enzymes that could potentially degrade the extracted DNA. By breaking down these proteins, proteinase K helps protect the integrity of the DNA during the extraction process.</li>
-                    <li>Buffer AL: Designed to lyse (break open) cells and tissues to release the DNA contained within them. It works in combination with other reagents in the kit to disrupt cell membranes and nuclear membranes, effectively releasing the cellular and nuclear contents, including DNA, into the solution.</li>
-                    <li>Ethanol: Added because nucleic acid pellets are not soluble in ethanol and will not dissolve during washing. This helps to keep the DNA together and out of solution with the unwanted components.</li>
-                    <li>Buffer AW1: Serves the purpose of facilitating the initial washing steps after DNA binding to the silica membrane in the spin column. These washing steps are crucial for removing impurities, contaminants, and residual chemicals from the DNA extraction process. Buffer AW1 is a specially formulated wash buffer that helps achieve effective purification and isolation of high-quality DNA. </li>
-                    <li>Buffer AW2: Similar to AW1, AW2 is a formulated wash buffer that is used to further purify the DNA by removing residual contaminants, salts, and impurities from the DNA extraction process.</li>
-                    <li>AE Buffer: Elute (release) the purified DNA from a solid support, such as a spin column or a silica membrane, where it was bound during the DNA extraction or purification process. Elution is the final step of the DNA extraction protocol and is crucial for obtaining the DNA in a usable form for downstream applications.</li>
+                    <li><b>ATL Buffer</b>: Lyse (break open) cells and tissues to release the DNA contained within them. It does this by disrupting the cell membranes and nuclear membranes, effectively releasing the cellular and nuclear contents, including DNA, into the solution. </li>
+                    <li><b>Proteinase K</b>: Proteinase K is highly effective at digesting a wide range of proteins, including nucleases and other enzymes that could potentially degrade the extracted DNA. By breaking down these proteins, proteinase K helps protect the integrity of the DNA during the extraction process.</li>
+                    <li><b>Buffer AL</b>: Designed to lyse (break open) cells and tissues to release the DNA contained within them. It works in combination with other reagents in the kit to disrupt cell membranes and nuclear membranes, effectively releasing the cellular and nuclear contents, including DNA, into the solution.</li>
+                    <li><b>Ethanol</b>: Added because nucleic acid pellets are not soluble in ethanol and will not dissolve during washing. This helps to keep the DNA together and out of solution with the unwanted components.</li>
+                    <li><b>Buffer AW1</b>: Serves the purpose of facilitating the initial washing steps after DNA binding to the silica membrane in the spin column. These washing steps are crucial for removing impurities, contaminants, and residual chemicals from the DNA extraction process. Buffer AW1 is a specially formulated wash buffer that helps achieve effective purification and isolation of high-quality DNA. </li>
+                    <li><b>Buffer AW2</b>: Similar to AW1, AW2 is a formulated wash buffer that is used to further purify the DNA by removing residual contaminants, salts, and impurities from the DNA extraction process.</li>
+                    <li><b>AE Buffer</b>: Elute (release) the purified DNA from a solid support, such as a spin column or a silica membrane, where it was bound during the DNA extraction or purification process. Elution is the final step of the DNA extraction protocol and is crucial for obtaining the DNA in a usable form for downstream applications.</li>
                 </p>
-	</body>
-	
-</html>"DNA_barcoding1.png" alt="This is a test image" height="128" width="393">
+            </section>
+            <section class="main-section" id="PCR">
+                <br>
+                   <h2> PCR </h2>
+                <p>
+                    <b>Purpose</b>: to amplify (make many copies of) a specific segment of DNA.
+                    <ol class = "li2">
+                        <li> <b>PCR PreMix</b>: contains most components for PCR, including Taq DNA polymerase, dNTPs, MgCl2, reaction buffer, PCR stabilizer
+                             and enhancer at optimal concentrations for consistent and efficient PCR amplification.</li>
+                             a. <b>Taq DNA polymerase</b>: a heat-stable enzyme used to synthesize complementary strands of DNA during DNA amplification. <br>
+                             b. <b>dNTPs</b>: deoxyribonucleotide triphosphates, are the building blocks used by DNA polymerase to synthesize a new DNA strand during processes like DNA replication <br>
+                             c. <b>MgCl2</b>: enhances the activity of the DNA polymerase enzyme and promotes efficient DNA amplification. <br>
+                             d. <b>Reaction Buffer</b>: designed to create a controlled and optimized environment for efficient and specific DNA amplification. 
+                             It plays a critical role in maintaining the stability and activity of the DNA polymerase enzyme, facilitating denaturation and 
+                             annealing steps, and ensuring accurate and reliable DNA synthesis during the PCR process. <br> </li>
+                        <br><li><b>ddH2O</b>: acts as a solvent, dilutes reagents, adjusts volume, and maintains reaction conditions for efficient DNA amplification. </li>
+                        <li> <b>Primers</b>: short DNA sequences that define the start and end points of the target DNA region to be amplified, allowing DNA polymerase to synthesize complementary strands during each cycle of amplification.</li>
+                        <li><b>DNA</b>: serves as the starting material for amplification, providing the sequence to be copied and multiplied by DNA polymerase during each cycle of the reaction.</li>
+                    </ol>
+                </p>
+            </section>
+            <section class="main-section" id="Gel Electrophoresis">
+            	<br>
+                   <h2>Gel Electrophoresis</h2>
+                <p>
+                    <b>Purpose</b>: Determine the presence and length of PCR product. 
+                        <br><br> Regents needed:
+                    <ol class = "li2">
+                        <li><b>TAE Buffer</b>: (Tris-Acetate-EDTA) is a commonly used buffer solution in agarose gel electrophoresis. Its purpose is to create the appropriate pH, 
+                            conductivity, and ion concentration conditions for the movement of nucleic acids (DNA or RNA) through the gel during electrophoresis. </li>
+                        <li><b>Agarose</b>: to create a porous matrix through which DNA, RNA, or proteins can migrate when an electric field is applied. Agarose forms a gel-like structure that
+                             serves as a molecular sieve, allowing the separation of biomolecules based on their size and charge.</li>
+                        <li><b>GelRed</b>: a fluorescent nucleic acid stain commonly used in gel electrophoresis to visualize DNA or RNA bands. Its purpose is to enhance the detection and visualization of DNA or RNA 
+                            molecules in agarose gels by binding to the nucleic acids and emitting visible fluorescence when exposed to ultraviolet (UV) light.</li>
+                    </ol>
+                </p>
+            </section>
 
+            <section class="main-section" id="PCR Purification">
+            	<br>
+                  <h2>
+                    PCR Purification
+                </h2>
+                <p>
+                    <b>Purpose</b>: to remove unincorporated primers and residual nucleotides from a PCR product, making the DNA sample suitable for downstream applications 
+                        such as sequencing, cloning, or other analyses.
+                    <br><br> Regents needed:
+                    <ul class = "li2">
+                        <li><b>ExoSAPIT</b>: Exonuclease I and Shrimp Alkaline Phosphatase (ExoSAP-IT) is an enzyme mixture used to remove unincorporated nucleotides and dephosphorylate residual primers from a polymerase chain reaction (PCR) product.</li>
+                    </ul>
+                    
+
+                </p>
+            </section>
+            <section class="main-section" id="Sequencing">
+            	<br>
+                   <h2>
+                    Sequencing
+                </h2>
+                <p>
+                    <b>Purpose</b>: to determine the precise order of nucleotides (A, C, G, and T) in a DNA or RNA molecule, 
+                    providing valuable information about genetic sequences, genes, mutations, and functional elements.
+                    <br><br> Regents needed:
+                    <ul class = "li2">
+                        <li><b>Primers</b>: to initiate DNA synthesis at specific points on the template DNA, allowing the determination of the sequence
+                             of nucleotides in the target region. Both forward and reverse primers are utilized to determine the forward and reverse read of the PCR product. </li>
+                    </ul>
+                </p>
+            </section>
 	</body>
 	
 </html>
